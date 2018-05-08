@@ -23,12 +23,6 @@
         </div>
     </div>
 
-
-    <!-------------------- Filter String (For Testing) ------------------------------->
-    <!--
-    <div data-ng-show="vm.searchQuery != null" style="margin-top:40px; margin-left:20px; clear:both; color:darkgray"><small>{{ vm.searchQuery }}</small></div>
-    <div data-ng-show="vm.filterString != null" style="margin-top:40px; margin-left:20px; clear:both; color:darkgray"><small>{{ vm.filterString }}</small></div>-->
-    <!-- we hide sidebar on map search until results exist-->
     <div id="search-powerbar" class="hidden-xs hidden-sm nano"
          style="overflow-y: auto; overflow-x:hidden; padding:-5px; width:245px; height:100%; position: fixed; z-index: 1000; left:0; top:0;">
 
@@ -54,9 +48,7 @@
 
             </form>
 
-
             <!---------------------------- CATEGORIES ------------------------>
-
 
             <div id="categorizationFilter">
 
@@ -160,7 +152,6 @@
             <!---------------------------- FACETS ------------------------>
 
             <div class="panel-group" data-ng-repeat="facet in vm.facets">
-
 
                 <div data-ng-hide="facet.type == 'location' && vm.searchMode == 'map'">
                     <!-- Hide location drawers during map search -->
